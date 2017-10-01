@@ -18,53 +18,26 @@ html
       ga('create', 'UA-74173950-1', 'auto');
       ga('send', 'pageview');
 
-    .container
-      .intro-section.section
-        .intro-section-container
-          .line-up
-            h2.line-up-artist
-              span.name.mom-name
-                | Modern Obscure
-                br
-                | Music Soundsystem
-              span.type dj set
-            h2.line-up-artist
-              span.name
-                | Eterna
-              span.type live
-            h2.line-up-artist
-              span.name
-                | Defled
-              span.type live
-          .location
-            p
-              span.block.date 17.02.2017 — 19:30
-              span.block.name Convent Sant de Agusti
-              span.block.address Carrer del Comerç, 36 Barcelona
-
-            .colab
-              .colab-title Colabora:
-              .colab-image
-                img(src="images/microfusa.png", alt="microfusa")
-
-          .intro-section-bg
-            .pill-logos
-              .pill-logo.pill-logo-left
-                img(src="images/versal.svg", alt="versal")
-              .pill-logo.pill-logo-right
-                img(src="images/modern-obscure-music.png", alt="versal")
-            .pill
-              .pill-circle
-              .pill-circle
-            .pill.bg-pill.bg-pill-1
-              .pill-circle
-              .pill-circle
-            .pill.bg-pill.bg-pill-2
-              .pill-circle
-              .pill-circle
-            .pill.bg-pill.bg-pill-3
-              .pill-circle
-              .pill-circle
+    .intro-section.section
+      .intro-section-bg
+        .intro-section-bg-image
+          include includes/intro-bg.html
+      .intro-section-container.container
+        img.main-logo(src="images/versal.svg", alt="versal")
+        .line-up
+          h2.line-up-artist
+            span.name
+              | Derobla
+            span.type live
+          h2.line-up-artist
+            span.name
+              | Shit Japens
+            span.type live
+        .location
+          p
+            span.block.date 6.10.2017 — 19:30
+            span.block.name Miscelanea
+            span.block.address Carrer de Guàrdia 10 Barcelona
 
     .history-section
       .container
@@ -72,6 +45,11 @@ html
           | Versal es un evento que apuesta por directos de electrónica arriesgada, en el que se valora la experimentación y el vanguardismo. Una propuesta de música electrónica diferente que da cabida a artistas emergentes del panorama musical nacional.
         .history-list
           .history-list-title Ediciones Anteriores
+          .history-event
+            .history-event-count 5
+            .history-event-info
+              .history-event-date 23 Jun 2017
+              .history-event-artist Hayk An dj set / Ghostly Enemies dj set / JACKTOME dj set
           .history-event
             .history-event-count 4
             .history-event-info

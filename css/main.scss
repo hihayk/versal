@@ -29,118 +29,61 @@ body {
   align-items: center;
 }
 
-.pill {
-  display: flex;
-  justify-content: space-between;
-  width: 824px;
-  position: absolute;
-  transform: rotate(15deg);
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    left: 128px;
-    right: 128px;
-    height: 4px;
-    background-color: $red;
-  }
-  &:before {
-    top: 0;
-  }
-  &:after {
-    bottom: 0;
-  }
+.main-logo {
+  margin-bottom: 48px;
 }
-.pill-circle {
-  flex-shrink: 0;
-  width: 260px;
-  height: 256px;
-  border: 4px solid $red;
-  border-radius: 50%;
-}
-.pill-line{
-  height: 4px;
-  flex-grow: 1;
-  margin: 0 -128px;
-  background-color: $red;
-}
-.bg-pill {
-  opacity: .1
-}
-.bg-pill-1 {
-  transform: rotate(90deg);
-  left: 260px;
-  top: -644px;
-  transform-origin: left top;
-}
-.bg-pill-2 {
-  transform: rotate(90deg);
-  right: 263px;
-  bottom: -318px;
-  transform-origin: right bottom;
-}
-.bg-pill-3 {
-  transform: rotate(-15deg);
-  top: 153px;
-}
-.pill-logos {
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-  position: absolute;
-  top: 35px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 195px;
-  padding: 0 70px;
-}
-.pill-logo-right {
-  align-self: flex-end;
-}
+
 .intro-section {
+  color: $red;
   display: flex;
-  width: 100%;
   align-items: center;
   overflow: hidden;
-  padding-top: 192px;
-  padding-bottom: 192px;
+  background-color: $red;
+  height: 800px;
+
+  @media screen and (max-width: 900px) {
+    height: 640px;
+  }
 }
 .intro-section-container {
   position: relative;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 .intro-section-bg {
+  overflow: hidden;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 75px;
-}
-.line-up {
-  padding-left: 230px;
-  @media screen and (max-width: 900px) {
-    padding-left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 900px) {
+    top: 75px;
   }
+}
+.intro-section-bg-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
 }
 .line-up-artist {
   margin: 0;
   .name {
     @media screen and (max-width: 900px) {
-      font-size: 72px;
-      line-height: 60px;
+      font-size: 56px;
+      line-height: 48px;
     }
     font-size: 114px;
     font-weight: 700;
     line-height: 90px;
     display: inline-block;
     color: $red;
-
-    &.mom-name {
-      font-size: 36px;
-      line-height: 36px;
-      margin-bottom: 16px;
-      margin-left: 4px;
-    }
   }
   .type {
     text-transform: uppercase;
@@ -152,6 +95,11 @@ body {
       content: "—";
       display: block;
     }
+
+    @media screen and (max-width: 900px) {
+      font-size: 12px;
+      margin-left: 8px;
+    }
   }
 }
 .location {
@@ -160,27 +108,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   position: relative;
-  padding-left: 120px;
-  padding-top: 80px;
   @media screen and (max-width: 900px) {
     padding-left: 0;
   }
   .name,
   .date {
-    font-weight: 500;
+    font-weight: 700;
   }
   .address{
-    font-weight: 200;
+    font-weight: 400;
   }
-}
-.colab {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-.colab-image {
-  margin-top: 7px;
-  margin-left: 8px;
 }
 
 .history-section {
@@ -224,123 +161,6 @@ body {
   margin-bottom: 128px;
   opacity: .5;
 }
-
-
-
-
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light.svg#GT-Walsheim") format("svg");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Light-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Thin.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin.svg#GT-Walsheim") format("svg");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Thin-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Thin-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Thin-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Light.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light.svg#GT-Walsheim") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Light-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Light-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Light-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Regular.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular.svg#GT-Walsheim") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Regular-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Regular-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Regular-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Medium.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium.svg#GT-Walsheim") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Medium-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Medium-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Medium-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Bold.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold.svg#GT-Walsheim") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Bold-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Bold-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Black.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black.svg#GT-Walsheim") format("svg");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Black-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Black-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Black-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold.svg#GT-Walsheim") format("svg");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "GT-Walsheim";
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold-Oblique.eot");
-  src: url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold-Oblique.woff") format("woff"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold-Oblique.ttf") format("truetype"), url("../fonts/FoundersGrotesk/GT-Walsheim-Ultra-Bold-Oblique.svg#GT-Walsheim") format("svg");
-  font-weight: 900;
-  font-style: italic;
-}
-
 
 @font-face {
   font-family: 'Founders Grotesk';
