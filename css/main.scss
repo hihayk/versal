@@ -97,8 +97,7 @@ body {
     }
 
     @media screen and (max-width: 900px) {
-      font-size: 12px;
-      margin-left: 8px;
+      display: none;
     }
   }
 }
@@ -145,6 +144,7 @@ body {
   width: 32px;
   margin-right: 32px;
   opacity: .2;
+  flex-shrink: 0;
 }
 .history-event-info {
   font-size: 24px;

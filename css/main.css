@@ -1022,8 +1022,7 @@ body {
       display: block; }
     @media screen and (max-width: 900px) {
       .line-up-artist .type {
-        font-size: 12px;
-        margin-left: 8px; } }
+        display: none; } }
 
 .location {
   text-transform: uppercase;
@@ -1064,7 +1063,8 @@ body {
   font-weight: 100;
   width: 32px;
   margin-right: 32px;
-  opacity: .2; }
+  opacity: .2;
+  flex-shrink: 0; }
 
 .history-event-info {
   font-size: 24px;
