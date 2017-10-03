@@ -1054,7 +1054,7 @@ body {
 
 .history-event {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   border-bottom: 8px solid #111; }
 
 .history-event-count {
@@ -1063,16 +1063,22 @@ body {
   font-weight: 100;
   width: 32px;
   margin-right: 32px;
-  opacity: .2;
+  opacity: .1;
   flex-shrink: 0; }
 
 .history-event-info {
   font-size: 24px;
-  line-height: 32px;
-  padding-bottom: 16px; }
+  line-height: 32px; }
 
 .history-event-date {
-  opacity: .7; }
+  opacity: .4; }
+
+.history-act-type {
+  opacity: .4; }
+
+.history-artist-divider {
+  opacity: .2;
+  margin: 0 8px; }
 
 .about {
   font-size: 24px;
