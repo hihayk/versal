@@ -135,11 +135,14 @@ body {
 .history-event {
   display: flex;
   margin-bottom: 16px;
+  padding-bottom: 8px;
   border-bottom: 8px solid #111;
 }
 .history-event-count {
   text-align: center;
   font-size: 64px;
+  line-height: 72px;
+  height: 56px;
   font-weight: 100;
   width: 32px;
   margin-right: 32px;
