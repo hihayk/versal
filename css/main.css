@@ -1077,6 +1077,7 @@ body {
   opacity: .4; }
 
 .history-artist-divider {
+  display: inline-block;
   opacity: .2;
   margin: 0 8px; }
 
